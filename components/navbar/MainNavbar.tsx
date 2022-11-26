@@ -25,7 +25,7 @@ type Props = {
 const MainNavbar: FC<Props> = ({ items }) => {
   const { colorMode } = useColorMode();
   return (
-    <Box bg={useColorModeValue("brand.primary", "grey.900")}>
+    <Box bg={useColorModeValue("brand.primary", "grey.900")} mt='64px'  >
       <Container h={16} display="flex" alignItems="center" maxW="container.xl">
         {/* PART 01 - LOGO */}
         <Link href="/" passHref>

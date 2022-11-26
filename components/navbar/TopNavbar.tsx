@@ -51,8 +51,9 @@ const TopNavbar: FC<Props> = ({ items }) => {
   };
 
   return (
-    <Container maxW="container.xl">
-      <Flex p={0} h={16} w="full" align="center" justify="space-between">
+    <Container maxW="container.xl" display='flex' >
+      <Flex paddingX={{ lg: 4, xl: 12 }} h={16} w="full" align="center" justify="space-between" zIndex="3"
+        bg={useColorModeValue("white", "brand.black")} position='fixed' top="0px" right="0px">
         {/* PART 01 */}
         <Button
           rounded="none"
